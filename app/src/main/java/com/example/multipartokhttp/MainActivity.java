@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                     .type(MultipartBuilder.FORM)
                     .addPart(
                             Headers.of("Content-Disposition", "form-data; name=\"title\""),
-                            RequestBody.create(null, "Square Logo"))
+                            RequestBody.create(null, "Sample Text Content"))
                     .addPart(
                             Headers.of("Content-Disposition", "form-data; name=\"file\"; filename=\"ic_launcher.png\""),
                             RequestBody.create(MEDIA_TYPE_PNG, bitmapdata))
